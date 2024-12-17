@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Responsivo</title>
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        main {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            margin: auto;
+            width: 90%;
+            min-width: 320px; /* Tamanho mínimo */
+            max-width: 800px; /* Tamanho máximo */
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        picture img {
+            width: 100%; /* Imagem ocupa 100% do bloco */
+            border-radius: 10px;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        p {
+            font-size: 16px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Exemplo de Imagem Responsiva</h1>
+        <p>Este exemplo combina o uso de <code>&lt;source&gt;</code> e regras CSS como <code>min-width</code> e <code>max-width</code> para criar um layout responsivo.</p>
+        <picture>
+            <!-- Imagem para telas pequenas -->
+            <source media="(max-width: 480px)" srcset="https://via.placeholder.com/480x300?text=Tela+Pequena">
+            <!-- Imagem para telas médias -->
+            <source media="(max-width: 800px)" srcset="https://via.placeholder.com/800x500?text=Tela+Média">
+            <!-- Imagem padrão -->
+            <img src="https://via.placeholder.com/1200x600?text=Tela+Grande" alt="Exemplo Responsivo">
+        </picture>
+        <p>Redimensione a janela para ver as imagens mudarem conforme o tamanho da tela.</p>
+    </main>
+</body>
+</html>
