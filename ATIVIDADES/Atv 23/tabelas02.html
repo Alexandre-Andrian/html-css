@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 2px;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        td{
+            border: 1px solid black;
+            height: 30px;
+            text-align: center;
+            
+            
+        }
+        thead>  tr> th{
+            position: sticky;
+            top: -1px;
+            background-color: rgb(153, 153, 153);
+           
+        }
+        th{
+            background-color: rgba(53, 49, 49, 0.411);
+            height: 30px; 
+            border: 1px solid black;
+        }
+        .num{
+            color: rgb(60, 108, 180);
+            width: 130px;
+        }
+        .num:hover{
+            text-decoration: underline;
+        }
+        tbody>tr>td{
+            color: rgb(28, 99, 117);
+           
+        }
+        
+        tbody>tr>td:hover{
+            text-decoration: underline;
+            background-color: rgba(135, 136, 138, 0.171);
+           
+        }
+        caption{
+            background-color: rgb(223, 220, 220);
+            font-size: 1.3em;
+            
+            width: 580px;
+            padding: 8px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        tbody>tr:nth-child(2n-1){
+            background-color: lightgray;
+        }
+        tbody> tr>td:nth-child(2n){
+            background-color: rgb(255, 255, 255);
+        }
+        .ibge:hover{
+            background-color: rgba(95, 94, 94, 0.151);
+        }
+        div{
+            background-color: rgba(255, 255, 255, 0.082);
+            height: 400px;
+            
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption >População do Brasil De acordo com o IBGE.</caption>
+        <thead>
+            <tr>
+                <th scope="col">
+                    Estado
+                </th>
+                <th scope="col">
+                    População
+                </th>
+            </tr>
+        </thead>
+            <tr>
+                
+        <tbody>
+            <tr>
+                <td class="ibge">Minas Gerais</td>
+                <td class="num">21.234.394</td>
+            </tr>
+            <tr>
+                <td >Rio De Janeiro</td>
+                <td class="num">293.294.</td>
+            </tr>
+            <tr>
+                <td class="ibge">São Paulo</td > 
+                <td class="num">45 973 190</td>
+            </tr>
+            <tr>
+                <td >Bahia</td>
+                <td class="num">29483.920483.</td>
+            </tr>
+            <tr>
+                <td class="ibge">Santa Catarina</td>
+                <td class="num">284.383.877</td>
+            </tr>
+            <tr>
+                <td >Pará</td>
+                <td class="num">45.294.940</td>
+            </tr>
+            <tr>
+                <td class="ibge">Goiás</td>
+                <td class="num">413.2492.323</td>
+            </tr>
+            <tr>
+                <td >Amazonas</td>
+                <td class="num">45 973 190</td>
+            </tr>
+            <tr>
+                <td class="ibge">Paraíba</td>
+                <td class="num">4 145 040</td>
+            </tr>
+            <tr>
+                <td >Espírito Santo</td>
+                <td class="num">4 102 129</td>
+            </tr>
+            <tr>
+                <td class="ibge">Mato Grosso</td>
+                <td class="num">3 836 393</td>
+            </tr>
+            <tr>
+                <td >Rio Grande do Norte</td>
+                <td class="num">3 446 071</td>
+            </tr>
+            <tr>
+                <td  class="ibge">Piauí</td>
+                <td class="num">3 375 646</td>
+            </tr>
+            <tr>
+                <td >Alagoas</td>
+                <td class="num">3 220 104</td>
+            </tr>
+            <tr>
+                <td class="ibge">Alagoas</td>
+                <td class="num">2 982 815</td>
+            </tr>
+            <tr>
+                <td >Mato Grosso do Sul</td>
+                <td class="num">2 901 895</td>
+            </tr> 
+            <tr>
+                <td class="ibge" >Sergipe</td>
+                <td class="num">2 291 077</td>
+            </tr>
+            
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de habitantes</th>
+                <th  ><strong>210.223.433</strong></th>
+            </tr>
+        </tfoot>
+    </table>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+</html>
