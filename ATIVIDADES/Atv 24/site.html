@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 550;
+            margin: 0;
+            padding: 0;
+            background-image: url(wallpaper004.jpg); /* Caminho da imagem */
+            background-size: cover; /* Faz a imagem cobrir toda a tela */
+            
+            background-position: right center; /* Centraliza a imagem */
+        }
+
+        nav {
+            background-color: rgb(51, 51, 141);
+            width: 100vw;
+            height: 200px;
+            display: flex; /* Ativa o Flexbox */
+            justify-content: flex-end; /* Move os itens para a direita */
+            align-items: center; /* Alinha os itens verticalmente ao centro */
+            padding-right: 20px; /* Espaço da borda direita */
+            
+        }
+
+        a {
+            text-decoration: none;
+            padding: 13px;
+            margin: 10px;
+            color: white;
+            
+            background-color: rgba(49, 99, 143, 0.671);
+            border-radius: 12px;
+        }
+
+        a:hover {
+            color: azure;
+            background-color: rgba(0, 0, 0, 0.486);
+            transition: 0.2s;
+        }
+        
+        #wal{
+            width: 100%; /* Largura da div */
+            height: 1000px; /* Altura da div */
+            background-image: url(wallpaper004.jpg); /* Caminho da imagem */
+            background-size: cover; /* Faz a imagem cobrir toda a div */
+            background-repeat: no-repeat; /* Evita repetição */
+            background-position: center; /* Centraliza a imagem */
+            
+            
+            
+        }
+        .h{
+            background-size: cover;
+            background-image: url(wallpaper006.jpg);
+            width: 100%;
+            height: 1000px;
+            background-position: center;
+        }
+        h1{
+            text-align: center;
+            padding-top: 60px;
+            font-size: 3.4em;
+            line-height: 70px;
+        }
+        p{
+            padding-top: 0px;
+            text-align: center;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Produtos</a>
+            <a href="#">Serviços</a>
+            <a href="#">Sobre nós</a>
+        </nav>
+    </header>
+    
+    <div id="wal">
+        <section>
+            <h1>Projetos da <br>empresa</h1>
+            <p>Lorem ipsum dolor <br>sit amet consectetur, adipisicing m minus corrupti illum.</p>
+        </section>
+    </div>
+    <div class="h">
+        <h1>Contratos</h1>
+        <p>Lorem ipsum dolor <br>sit amet consectetur, adipisicing m minus corrupti illum.</p>
+    </div>
+</body>
+</html>

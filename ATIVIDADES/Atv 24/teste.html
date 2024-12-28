@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra de Progresso Dinâmica</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        /* Container da barra */
+        .progress-bar {
+            width: 80%; /* Largura da barra */
+            height: 20px; /* Altura da barra */
+            background-color: #ccc; /* Fundo cinza claro */
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer; /* Permite clicar na barra */
+        }
+
+        /* Barra de buffer (cinza escuro) */
+        .buffer {
+            width: 0%; /* Começa vazio */
+            height: 100%;
+            background-color: #999; /* Cor da barra de buffer */
+        }
+
+        /* Barra de progresso (vermelha) */
+        .progress {
+            width: 0%; /* Começa vazio */
+            height: 100%;
+            background-color: red; /* Cor da barra de progresso */
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="progress-bar" id="progress-bar">
+        <div class="buffer" id="buffer-bar"></div>
+        <div class="progress" id="progress-bar-inner"></div>
+    </div>
+
+    <script>
+        // Seleciona os elementos da barra
+        const progressBar = document.getElementById('progress-bar');
+        const progress = document.getElementById('progress-bar-inner');
+        const buffer = document.getElementById('buffer-bar');
+
+        // Simula o progresso e o buffer
+        let progressWidth = 0; // Largura inicial do progresso
+        let bufferWidth = 0; // Largura inicial do buffer
+
+        // Atualiza as barras a cada 100ms
+        setInterval(() => {
+            if (bufferWidth < 100) {
+                bufferWidth += 0.5; // Simula carregamento do buffer
+                buffer.style.width = bufferWidth + '%';
+            }
+
+            if (progressWidth < bufferWidth) {
+                progressWidth += 0.2; // Simula o progresso do vídeo
+                progress.style.width = progressWidth + '%';
+            }
+        }, 100);
+
+        // Permite o clique para ajustar o progresso
+        progressBar.addEventListener('click', (event) => {
+            const rect = progressBar.getBoundingClientRect();
+            const clickPosition = event.clientX - rect.left;
+            const newWidth = (clickPosition / rect.width) * 100;
+
+            // Define o progresso somente se estiver dentro do buffer
+            if (newWidth <= bufferWidth) {
+                progressWidth = newWidth;
+                progress.style.width = progressWidth + '%';
+            }
+        });
+    </script>
+</body>
+</html>
