@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="ipais" > Pais</label>
+            <select name="pais" id="ipais">
+                <optgroup label="Paises Falsos">
+                    <option value="Rj">Rio de janeiro</option>
+                    <option value="Es">Es</option>
+                </optgroup>
+                <optgroup  label="Paises Reais">
+                    <option value="França" selected>frança</option>
+                    <option value="eua">estados Unidos</option>
+                    <option value="inglaterra">inglaterra</option>
+                </optgroup>
+            </select>
+
+       </p>
+       <p>
+        <label for="iprof">Profissão </label>
+        <input type="text" name="profissao" id="iprof" list="list">
+        <datalist id="list">
+            <option value="dev">desenvolvedor</option>
+            <option value="empresario"> empresario</option>
+            <option value=" gari"> gari</option>
+            <option value=" professor"> professor </option>
+        </datalist>
+       </p>
+       <p>
+            <label for="imsg">Mensagem</label> <br>
+            <textarea name="msg" id="imsg"></textarea>
+       </p>
+    <P>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+        
+    </P>
+    </form>
+</body>
+</html>
