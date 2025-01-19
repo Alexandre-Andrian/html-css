@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        /* declaracoes gerais */
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        html,body{
+            width: 100vw;
+            height: 100vh;
+            background-color: black;
+        }
+        h1{
+            color: white;
+            text-shadow: 2px 2px 2px blueviolet;
+            padding: 10px;
+        }
+
+        /* declaracao retrato*/
+        @media screen and (orientation: portrait) {
+                /* Regras CSS aqui */
+     body{
+            background: url(../imagens/cev-portrait.jpg) ;
+            background-repeat: no-repeat contain;
+            background-position: center center;
+}
+        }
+
+  /* declaracao paisagem */ 
+  @media  screen and (orientation: landscape) {
+ body{
+     background: url(../imagens/cev-landscape.jpg);
+     background-repeat: no-repeat cover;
+    }
+    h1{
+        color: black;
+    }
+    }
+     </style>
+</head>
+<body>
+     <h1> mude a orientação do seu dispositivo</h1>
+</body>
+</html>

@@ -1,6 +1,8 @@
 body{
     background: url(../imagens/cev-landscape.jpg);
-    background-repeat: no-repeat cover;
+    background-repeat: cover no-repeat ;
+    width: 98vw;
+    height: 98vh;
 }
 h1{
     color: black;

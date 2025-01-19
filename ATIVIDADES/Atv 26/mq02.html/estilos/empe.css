@@ -1,4 +1,5 @@
 body{
     background: url(../imagens/cev-portrait.jpg) ;
     background-repeat: no-repeat contain;
+    background-position: center center;
 }
