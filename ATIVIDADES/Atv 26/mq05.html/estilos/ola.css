@@ -1,0 +1,16 @@
+@media screen and (min-width: 768px) {
+    i#icone{
+        display: none;
+    }
+    menu{
+        display: block;
+      }
+      li{
+        display: inline-block;
+        margin: auto;
+        text-align: center;
+      }
+    main{
+        width: 768px;
+    }
+}

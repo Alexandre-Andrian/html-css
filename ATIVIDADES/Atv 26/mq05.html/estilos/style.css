@@ -31,6 +31,8 @@ menu{
 }
 menu > ul{
     list-style-type: none;
+    text-align: center;
+    margin: auto;
 }
 a{
     display: block;
