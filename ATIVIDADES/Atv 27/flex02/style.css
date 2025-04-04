@@ -1,0 +1,110 @@
+body{
+    background: linear-gradient(to bottom, rgba(43, 4, 105, 0.884), black ) no-repeat fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+nav{
+   display: inline-flex;
+   margin: 8px;
+   color: rgb(255, 255, 255);
+   font-size: 1.0em;
+}
+nav:hover{
+    background-color: black ;
+    padding: 5px;
+    color: white;
+    transform: translate(-10%, -10%);
+    transition: .3s;
+}
+main{
+    text-align: center;
+    margin-top: 0px;
+   
+}
+header{
+    background-color: rgba(0, 0, 0, 0.219);
+    margin: 0;
+    width: 100%;
+    height: 39px;
+    padding: 0;
+}
+h1{
+    color: white;
+}
+p{
+    text-align: center;
+    font-weight: normal;
+    color: white;
+}
+.secao1{
+    background-color: black;
+    height: 500px;
+    width: 100%;
+    border-radius: 9px;
+    position: relative;
+}
+.secao2{
+    background-color: rgba(255, 255, 255, 0.753);
+    height: 500px;
+    width: 100%;
+    border-radius: 9px;
+}
+.mundo{
+    color: rgb(19, 173, 19);
+  
+}
+.h12{
+    color: rgb(0, 0, 0);
+    padding: 40px;
+    text-align: center;
+}
+div{
+    margin: 0;
+    padding: 0;
+}
+#graca{
+    color: red;
+    text-decoration: underline;
+
+}
+h2{
+    color: white;
+    padding: 20px;
+    font-size: 1.6em;
+    text-align: center;
+}
+h3{
+    color: white;
+    left: 13px; 
+    position: absolute;
+    top: 66px;
+    font-size: 1.3em;
+
+}
+.secao{
+    font-size: .9em;
+    top: 110px;
+    text-align: left;
+    left: 10px;
+    position: absolute;
+}
+.p1{
+    font-size: .9em;
+    top: 180px;
+    text-align: left;
+    left: 10px;
+    position: absolute;
+}
+.p2{
+    font-size: .9em;
+    top: 250px;
+    text-align: left;
+    left: 10px;
+    position: absolute;
+}
+.paragrafo{
+    font-size: .6em;
+    color: black;
+}
